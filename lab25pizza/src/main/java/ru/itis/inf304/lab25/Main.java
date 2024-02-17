@@ -14,5 +14,7 @@ public class Main {
 
         Order order1 = new Order(client1,cook1, Pizza.Маргарита,
                 OrderStatus.Заказан, numFactory.next(), "16.12.2023");
+
+        Order order2 = Order.getBuilder().cook(cook1).client(client1).pizza(Pizza.Маргарита).build();
     }
 }
